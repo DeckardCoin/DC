@@ -25,11 +25,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
 const uint64_t MONEY_SUPPLY                                  = 16500000000;
-<<<<<<< HEAD
 const unsigned EMISSION_SPEED_FACTOR                         = 19;
-=======
-const unsigned EMISSION_SPEED_FACTOR                         = 18;
->>>>>>> b51a88189026ba265448195754ca06010cef496c
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
@@ -110,12 +106,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-<<<<<<< HEAD
   "165.227.37.14:17236",
   "165.227.47.58:17236",
-=======
-  //"165.227.41.149:17236",
->>>>>>> b51a88189026ba265448195754ca06010cef496c
 };
 
 struct CheckpointData {
